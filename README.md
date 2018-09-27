@@ -1,7 +1,7 @@
 # SmashWiiUDoublesOverlayStep2
 Step 2 of a project to create a dynamically editable overlay for Super Smash Bros. Wii U Doubles usable for any tournament streamer using HTML, CSS and C#.
 
-Changes from Step 2:
+Changes from Step 1:
 - The manager solution/application has been added to the project, meaning you don't have to manually edit css files!
 
 Anyone is allowed to clone this repository and create their own overlay manager if they feel it lacks some functionality that they need for their own tournament streams. I will not accept any pull requests unless it fixes an important bug.
