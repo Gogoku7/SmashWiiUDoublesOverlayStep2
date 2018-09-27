@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/team1NameText.css">
+        <link rel="stylesheet" type="text/css" href="css/team1player1Character.css">
+        <link rel="stylesheet" type="text/css" href="css/team1player1Port.css">
+        <link rel="stylesheet" type="text/css" href="css/team1player2Character.css">
+        <link rel="stylesheet" type="text/css" href="css/team1player2Port.css">
+        <link rel="stylesheet" type="text/css" href="css/team1ScoreText.css">
+        <link rel="stylesheet" type="text/css" href="css/team2NameText.css">
+        <link rel="stylesheet" type="text/css" href="css/team2player1Character.css">
+        <link rel="stylesheet" type="text/css" href="css/team2player1Port.css">
+        <link rel="stylesheet" type="text/css" href="css/team2player2Character.css">
+        <link rel="stylesheet" type="text/css" href="css/team2player2Port.css">
+        <link rel="stylesheet" type="text/css" href="css/team2ScoreText.css">
+        <link rel="stylesheet" type="text/css" href="css/roundBoxText.css">
+        <link rel="stylesheet" type="text/css" href="css/tournamentBoxText.css">
+        <script src="javascript\jQuery.js"></script>
+        <script src="javascript\fitty.js"></script>
+    </head>
+	<body>
+		<div id="wrapper">
+			<div class="teams">
+				<div class="team" id="team1">
+					<div class="teamBox" id="team1Box">
+						<div class="teamScoreBox" id="team1ScoreBox">
+							<p class="teamScore" id="team1ScoreText"></p>
+						</div>
+						<div class="teamPlayer1Port" id="team1player1Port">
+							<div class="teamplayerCharacter" id="team1player1Character"></div>
+						</div>
+						<div class="teamNameBox" id="team1NameBox">
+							<p class="teamNames" id="team1NamesText"></p>
+						</div>
+						<div class="teamPlayer2Port" id="team1player2Port">
+							<div class="teamplayerCharacter" id="team1player2Character"></div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="team" id="team2">
+					<div class="teamBox" id="team2Box">
+						<div class="teamScoreBox" id="team2ScoreBox">
+							<p class="teamScore" id="team2ScoreText"></p>
+						</div>
+						<div class="teamPlayer1Port" id="team2player1Port">
+							<div class="teamplayerCharacter" id="team2player1Character"></div>
+						</div>
+						<div class="teamNameBox" id="team2NameBox">
+							<p class="teamNames" id="team2NamesText"></p>
+						</div>
+						<div class="teamPlayer2Port" id="team2player2Port">
+							<div class="teamplayerCharacter" id="team2player2Character"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="tournamentInfo">
+				<div class="info" id="infoRound">
+					<div class="infoBox" id="infoRoundBox">
+						<p class="boxText" id="roundBoxText"></p>
+					</div>
+				</div>
+				
+				<div class="info" id="infoTournament">
+					<div class="infoBox" id="infoTournamentBox">
+						<p class="boxText" id="tournamentBoxText"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script>
+	$( document ).ready(function() {
+		fitty('.teamNames', { minSize: 8, maxSize: 40, multiLine: false });
+		fitty('.teamScore', { minSize: 8, maxSize: 25, multiLine: false });
+		
+	});
+	
+	function onTimerTick() {
+        var queryString = '?reload=' + new Date().getTime();
+        $('link[rel="stylesheet"]').each(function () {
+            this.href = this.href.replace(/\?.*|$/, queryString);
+        });
+		
+		fitty('.teamNames', { minSize: 8, maxSize: 40, multiLine: false });
+		fitty('.teamScore', { minSize: 8, maxSize: 25, multiLine: false });
+    }
+
+    setInterval(function () {
+        onTimerTick();
+    }, 10000);
+</script>
