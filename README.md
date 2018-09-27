@@ -22,7 +22,7 @@ I kept the code as simple and seperated in different functions as possible, to m
 
 ![alt img](https://imgur.com/lzkitZe.png)
 
-You can doublecheck whether the application works now by checking if all of the following files exist in "\SmashWiiUOverlayManager\SmashWiiUOverlayManager\bin\ {Debug/Release} \Files\css":
+You can doublecheck whether the application works now by checking if all of the following files exist in "\SmashWiiUDoublesOverlayManager\SmashWiiUDoublesOverlayManager\bin\ {Debug/Release} \Files\css":
 - team1NameText.css
 - team1player1Character.css
 - team1player1Port.css
