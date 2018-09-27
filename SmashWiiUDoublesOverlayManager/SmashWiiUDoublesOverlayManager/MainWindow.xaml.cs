@@ -71,7 +71,7 @@ namespace SmashWiiUDoublesOverlayManager
                 var team2ScoreTextCss = cssFileTextReplacer.ReplaceTemplateFileText(team2ScoreTextTemplateCss, MainViewModel.Team2Score != null ? MainViewModel.Team2Score : "0");
 
                 var team1NameTextCss = cssFileTextReplacer.ReplaceTemplateFileTextForTeam(team1NameTextTemplateCss, MainViewModel.Team1Player1Sponsor, MainViewModel.Team1Player1Name, MainViewModel.Team1Player2Sponsor, MainViewModel.Team1Player2Name);
-                var team2NameTextCss = cssFileTextReplacer.ReplaceTemplateFileTextForTeam(team2NameTextTemplateCss, MainViewModel.Team2Player1Sponsor, MainViewModel.Team2Player1Name, MainViewModel.Team2Player2Sponsor, MainViewModel.Team2Player2Name);
+                var team2NameTextCss = cssFileTextReplacer.ReplaceTemplateFileTextForTeam(team2NameTextTemplateCss, MainViewModel.Team2Player2Sponsor, MainViewModel.Team2Player2Name, MainViewModel.Team2Player1Sponsor, MainViewModel.Team2Player1Name);
 
                 var team1player1CharacterCss = cssFileTextReplacer.ReplaceTemplateFileText(team1player1CharacterTemplateCss, MainViewModel.Team1Player1SelectedCharacter != null ? MainViewModel.Team1Player1SelectedCharacter.Path : @"..\\characterIcons\\random.png");
                 var team1player2CharacterCss = cssFileTextReplacer.ReplaceTemplateFileText(team1player2CharacterTemplateCss, MainViewModel.Team1Player2SelectedCharacter != null ? MainViewModel.Team1Player2SelectedCharacter.Path : @"..\\characterIcons\\random.png");
