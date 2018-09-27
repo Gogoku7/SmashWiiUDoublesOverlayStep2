@@ -16,11 +16,11 @@ I kept the code as simple and seperated in different functions as possible, to m
 - Open SmashWiiUDoublesOverlayManager.sln using Visual Studio.
 - Run the application.
 
-![alt img](https://imgur.com/na4ecHT.png)
+![alt img](https://imgur.com/JxPkGZH.png)
 
 - Fill the form on the overlay manager and click Submit.
 
-![alt img](https://imgur.com/dtz4LoR.png)
+![alt img](https://imgur.com/lzkitZe.png)
 
 You can doublecheck whether the application works now by checking if all of the following files exist in "\SmashWiiUOverlayManager\SmashWiiUOverlayManager\bin\ {Debug/Release} \Files\css":
 - team1NameText.css
@@ -42,16 +42,16 @@ You can doublecheck whether the application works now by checking if all of the 
 **How to use in Open Broadcaster Software (OBS Studio):**
 - Add a new Browser source to your scene.
 
-![alt img](https://imgur.com/em1uLIw.png)
+![alt img](https://imgur.com/tf1nFAP.png)
 
 - Check the Local file checkbox and click Browse.
 
-![alt img](https://imgur.com/jhgThI0.png)
+![alt img](https://imgur.com/czPD7Kl.png)
 - Select gameOverlay.html in the "\SmashWiiUOverlayManager\SmashWiiUOverlayManager\bin\ {Debug/Release} \Files\css" folder. 
 - Set the resolution and framerate. (1920 x 1080 at 60 frames per second recommended)
 - Check Refresh browser when scene becomes active checkbox.
 
-![alt img](https://imgur.com/RItgGYV.png)
+![alt img](https://imgur.com/Rpt9pdG.png)
 
 You are now ready to stream with the overlay.
 
