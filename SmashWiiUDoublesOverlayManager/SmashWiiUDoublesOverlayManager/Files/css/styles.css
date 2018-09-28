@@ -52,15 +52,13 @@ body
 #team1Box
 {
 	float: right;
-	animation: showPlayerBox 1s;
-	background-image: url('..\\playerBackgrounds\\team1Background.png');
+	background-image: url('..\\teamBackgrounds\\team1Background.png');
 }
 
 #team2Box
 {
 	float: left;
-	animation: showPlayerBox 1s;
-	background-image: url('..\\playerBackgrounds\\team2Background.png');
+	background-image: url('..\\teamBackgrounds\\team2Background.png');
 }
 
 /* teamBox END */
@@ -89,6 +87,9 @@ body
 	margin-right: 10px;
 }
 
+/* teamScoreBox END */
+
+
 
 /* teamScore */
 
@@ -97,17 +98,6 @@ body
 	color: white;
 	margin: 0;
 }
-
-#team1ScoreText
-{
-	
-}
-
-#team2ScoreText
-{
-	
-}
-
 
 /* teamScore END */
 
@@ -120,6 +110,7 @@ body
 	width: 50px;
 	height: 50px;
 	display:inline-block;
+	background-repeat: no-repeat;
 }
 
 #team1player1Port
@@ -183,16 +174,6 @@ body
 {
 	color: white;
 	margin: 0;
-}
-
-#team1NamesText
-{
-	
-}
-
-#team2NamesText
-{
-	
 }
 
 /* teamNames END*/
@@ -278,27 +259,18 @@ body
 	float: left;
 }
 
-/* roundBox END */
+/* infoBox END */
 
 
 
 /* boxText */
+
 .boxText
 {
 	width: auto;
 	margin: 0px;
 	white-space: nowrap;
 	color: white;
-}
-
-#roundBoxText
-{
-	
-}
-
-#tournamentBoxText
-{
-	
 }
 
 /* BoxText END */

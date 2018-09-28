@@ -63,12 +63,17 @@ namespace SmashWiiUDoublesOverlayManager
                 var team2player1PortTemplateCss = cssFileReader.ReadTemplateFile(@"Files\cssTemplates\team2player1Port.css");
                 var team2player2PortTemplateCss = cssFileReader.ReadTemplateFile(@"Files\cssTemplates\team2player2Port.css");
 
+                var team1player1TwitterTextTemplateCss = cssFileReader.ReadTemplateFile(@"Files\cssTemplates\team1player1TwitterText.css");
+                var team1player2TwitterTextTemplateCss = cssFileReader.ReadTemplateFile(@"Files\cssTemplates\team1player2TwitterText.css");
+                var team2player1TwitterTextTemplateCss = cssFileReader.ReadTemplateFile(@"Files\cssTemplates\team2player1TwitterText.css");
+                var team2player2TwitterTextTemplateCss = cssFileReader.ReadTemplateFile(@"Files\cssTemplates\team2player2TwitterText.css");
+
                 var roundBoxTextTemplateCss = cssFileReader.ReadTemplateFile(@"Files\cssTemplates\roundBoxText.css");
                 var tournamentBoxTextTemplateCss = cssFileReader.ReadTemplateFile(@"Files\cssTemplates\tournamentBoxText.css");
 
                 //Replace
-                var team1ScoreTextCss = cssFileTextReplacer.ReplaceTemplateFileText(team1ScoreTextTemplateCss, MainViewModel.Team1Score != null ? MainViewModel.Team1Score : "0");
-                var team2ScoreTextCss = cssFileTextReplacer.ReplaceTemplateFileText(team2ScoreTextTemplateCss, MainViewModel.Team2Score != null ? MainViewModel.Team2Score : "0");
+                var team1ScoreTextCss = cssFileTextReplacer.ReplaceTemplateFileText(team1ScoreTextTemplateCss, string.IsNullOrEmpty(MainViewModel.Team1Score) ? MainViewModel.Team1Score : "0");
+                var team2ScoreTextCss = cssFileTextReplacer.ReplaceTemplateFileText(team2ScoreTextTemplateCss, string.IsNullOrEmpty(MainViewModel.Team2Score) ? MainViewModel.Team2Score : "0");
 
                 var team1NameTextCss = cssFileTextReplacer.ReplaceTemplateFileTextForTeam(team1NameTextTemplateCss, MainViewModel.Team1Player1Sponsor, MainViewModel.Team1Player1Name, MainViewModel.Team1Player2Sponsor, MainViewModel.Team1Player2Name);
                 var team2NameTextCss = cssFileTextReplacer.ReplaceTemplateFileTextForTeam(team2NameTextTemplateCss, MainViewModel.Team2Player2Sponsor, MainViewModel.Team2Player2Name, MainViewModel.Team2Player1Sponsor, MainViewModel.Team2Player1Name);
@@ -83,10 +88,13 @@ namespace SmashWiiUDoublesOverlayManager
                 var team2player1PortCss = cssFileTextReplacer.ReplaceTemplateFileText(team2player1PortTemplateCss, MainViewModel.Team2Player1SelectedPort != null ? MainViewModel.Team2Player1SelectedPort.Path : @"..\\playerPorts\\playerPort8.png");
                 var team2player2PortCss = cssFileTextReplacer.ReplaceTemplateFileText(team2player2PortTemplateCss, MainViewModel.Team2Player2SelectedPort != null ? MainViewModel.Team2Player2SelectedPort.Path : @"..\\playerPorts\\playerPort8.png");
 
+                var team1player1TwitterTextCss = cssFileTextReplacer.ReplaceTemplateFileText(team1player1TwitterTextTemplateCss, MainViewModel.Team1Player1Twitter);
+                var team1player2TwitterTextCss = cssFileTextReplacer.ReplaceTemplateFileText(team1player2TwitterTextTemplateCss, MainViewModel.Team1Player2Twitter);
+                var team2player1TwitterTextCss = cssFileTextReplacer.ReplaceTemplateFileText(team2player1TwitterTextTemplateCss, MainViewModel.Team2Player1Twitter);
+                var team2player2TwitterTextCss = cssFileTextReplacer.ReplaceTemplateFileText(team2player2TwitterTextTemplateCss, MainViewModel.Team2Player2Twitter);
+
                 var roundBoxTextCss = cssFileTextReplacer.ReplaceTemplateFileText(roundBoxTextTemplateCss, $@"{MainViewModel.Round} / {MainViewModel.BestOf}");
                 var tournamentBoxTextCss = cssFileTextReplacer.ReplaceTemplateFileText(tournamentBoxTextTemplateCss, MainViewModel.TournamentName);
-
-                //var CssViewModel = new CssViewModel();
 
                 //Write
                 cssFileWriter.WriteFile(@"Files\css\team1ScoreText.css", team1ScoreTextCss);
@@ -104,6 +112,11 @@ namespace SmashWiiUDoublesOverlayManager
                 cssFileWriter.WriteFile(@"Files\css\team1player2Port.css", team1player2PortCss);
                 cssFileWriter.WriteFile(@"Files\css\team2player1Port.css", team2player1PortCss);
                 cssFileWriter.WriteFile(@"Files\css\team2player2Port.css", team2player2PortCss);
+
+                cssFileWriter.WriteFile(@"Files\css\team1player1TwitterText.css", team1player1TwitterTextCss);
+                cssFileWriter.WriteFile(@"Files\css\team1player2TwitterText.css", team1player2TwitterTextCss);
+                cssFileWriter.WriteFile(@"Files\css\team2player1TwitterText.css", team2player1TwitterTextCss);
+                cssFileWriter.WriteFile(@"Files\css\team2player2TwitterText.css", team2player2TwitterTextCss);
 
                 cssFileWriter.WriteFile(@"Files\css\roundBoxText.css", roundBoxTextCss);
                 cssFileWriter.WriteFile(@"Files\css\tournamentBoxText.css", tournamentBoxTextCss);

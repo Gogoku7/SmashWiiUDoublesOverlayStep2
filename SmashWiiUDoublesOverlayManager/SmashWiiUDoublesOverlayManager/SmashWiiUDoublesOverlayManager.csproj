@@ -112,10 +112,16 @@
     <Content Include="Files\cssTemplates\team1player1Port.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Files\cssTemplates\team1player1TwitterText.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Files\cssTemplates\team1player2Character.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Files\cssTemplates\team1player2Port.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\cssTemplates\team1player2TwitterText.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Files\cssTemplates\team1ScoreText.css">
@@ -130,10 +136,16 @@
     <Content Include="Files\cssTemplates\team2player1Port.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Files\cssTemplates\team2player1TwitterText.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Files\cssTemplates\team2player2Character.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Files\cssTemplates\team2player2Port.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Files\cssTemplates\team2player2TwitterText.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Files\cssTemplates\team2ScoreText.css">
@@ -334,10 +346,10 @@
     <Content Include="Files\gameOverlay.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\playerBackgrounds\team1Background.png">
+    <Content Include="Files\teamBackgrounds\team1Background.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Files\playerBackgrounds\team2Background.png">
+    <Content Include="Files\teamBackgrounds\team2Background.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Files\playerPorts\playerPort1.png">

@@ -147,6 +147,20 @@ namespace SmashWiiUDoublesOverlayManager.ViewModels
             }
         }
 
+        private string _team2Player1Twitter;
+        public string Team2Player1Twitter
+        {
+            get
+            {
+                return _team2Player1Twitter;
+            }
+            set
+            {
+                _team2Player1Twitter = value;
+                OnPropertyChanged();
+            }
+        }
+
         private string _team2Player2Twitter;
         public string Team2Player2Twitter
         {

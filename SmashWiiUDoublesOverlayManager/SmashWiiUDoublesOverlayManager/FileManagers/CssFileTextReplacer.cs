@@ -10,7 +10,7 @@ namespace SmashWiiUDoublesOverlayManager.FileManagers
             {
                 throw new ArgumentException(nameof(templateCss));
             }
-            if (cssValue == null)
+            if (string.IsNullOrEmpty(cssValue))
             {
                 cssValue = "";
             }
@@ -28,6 +28,14 @@ namespace SmashWiiUDoublesOverlayManager.FileManagers
         {
             string player1FullName;
             string player2FullName;
+            if (string.IsNullOrEmpty(player1Name))
+            {
+                player1Name = "???";
+            }
+            if (string.IsNullOrEmpty(player1Name))
+            {
+                player2Name = "???";
+            }
             if (string.IsNullOrEmpty(player1Sponsor))
             {
                 player1FullName = player1Name;
