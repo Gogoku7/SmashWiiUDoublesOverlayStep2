@@ -24,7 +24,7 @@ namespace SmashWiiUDoublesOverlayManager.FileManagers
             }
         }
 
-        public string ReplaceTemplateFileTextForTeam(string cssteamNameTextTemplateCss, string player1Sponsor, string player1Name, string player2Sponsor, string player2Name)
+        public string ReplaceTemplateFileTextForTeam(string cssTeamNameTextTemplateCss, string player1Sponsor, string player1Name, string player2Sponsor, string player2Name)
         {
             string player1FullName;
             string player2FullName;
@@ -53,7 +53,7 @@ namespace SmashWiiUDoublesOverlayManager.FileManagers
                 player2FullName = $"{player2Sponsor} | {player2Name}";
             }
 
-            return cssteamNameTextTemplateCss.Replace("PLACEHOLDER", $"{player1FullName} + {player2FullName}");
+            return cssTeamNameTextTemplateCss.Replace("PLACEHOLDER", $"{player1FullName} + {player2FullName}");
         }
     }
 }

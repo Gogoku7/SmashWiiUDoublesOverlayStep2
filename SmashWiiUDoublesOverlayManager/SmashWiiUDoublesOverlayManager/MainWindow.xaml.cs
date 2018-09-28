@@ -72,8 +72,8 @@ namespace SmashWiiUDoublesOverlayManager
                 var tournamentBoxTextTemplateCss = cssFileReader.ReadTemplateFile(@"Files\cssTemplates\tournamentBoxText.css");
 
                 //Replace
-                var team1ScoreTextCss = cssFileTextReplacer.ReplaceTemplateFileText(team1ScoreTextTemplateCss, string.IsNullOrEmpty(MainViewModel.Team1Score) ? MainViewModel.Team1Score : "0");
-                var team2ScoreTextCss = cssFileTextReplacer.ReplaceTemplateFileText(team2ScoreTextTemplateCss, string.IsNullOrEmpty(MainViewModel.Team2Score) ? MainViewModel.Team2Score : "0");
+                var team1ScoreTextCss = cssFileTextReplacer.ReplaceTemplateFileText(team1ScoreTextTemplateCss, !string.IsNullOrEmpty(MainViewModel.Team1Score) ? MainViewModel.Team1Score : "0");
+                var team2ScoreTextCss = cssFileTextReplacer.ReplaceTemplateFileText(team2ScoreTextTemplateCss, !string.IsNullOrEmpty(MainViewModel.Team2Score) ? MainViewModel.Team2Score : "0");
 
                 var team1NameTextCss = cssFileTextReplacer.ReplaceTemplateFileTextForTeam(team1NameTextTemplateCss, MainViewModel.Team1Player1Sponsor, MainViewModel.Team1Player1Name, MainViewModel.Team1Player2Sponsor, MainViewModel.Team1Player2Name);
                 var team2NameTextCss = cssFileTextReplacer.ReplaceTemplateFileTextForTeam(team2NameTextTemplateCss, MainViewModel.Team2Player2Sponsor, MainViewModel.Team2Player2Name, MainViewModel.Team2Player1Sponsor, MainViewModel.Team2Player1Name);
