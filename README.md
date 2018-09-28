@@ -26,17 +26,21 @@ You can doublecheck whether the application works now by checking if all of the 
 - team1NameText.css
 - team1player1Character.css
 - team1player1Port.css
+- team1player1TwitterText.css
 - team1player2Character.css
 - team1player2Port.css
+- team1player2TwitterText.css
 - team1ScoreText.css
 - team2NameText.css
 - team2player1Character.css
 - team2player1Port.css
+- team2player1TwitterText.css
 - team2player2Character.css
 - team2player2Port.css
+- team1player2TwitterText.css
 - team2ScoreText.css
-- roundBoxTest.css.
-- tournamentBoxText.css.
+- roundBoxTest.css
+- tournamentBoxText.css
 - styles.css. (is there by default)
 
 **How to use in Open Broadcaster Software (OBS Studio):**
