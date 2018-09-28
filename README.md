@@ -55,7 +55,7 @@ You can doublecheck whether the application works now by checking if all of the 
 - Set the resolution and framerate. (1920 x 1080 at 60 frames per second recommended)
 - Check Refresh browser when scene becomes active checkbox.
 
-![alt img](https://imgur.com/Rpt9pdG.png)
+![alt img](https://imgur.com/gAI5s4k.png)
 
 You are now ready to stream with the overlay.
 
